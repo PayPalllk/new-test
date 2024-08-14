@@ -1,0 +1,49 @@
+*{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16pt;
+}
+:root{
+  --black: rgba(163, 163, 163, 0.541);
+  --color1: rgb(226, 215, 65);
+  --color2: rgb(11, 6, 32);
+  --color3: rgb(245, 241, 220);
+  --color4: rgb(240, 228, 170);
+  --color-text: white;
+  --box-shadow: rgb(163, 163, 163);
+}
+
+body{
+  display: flex;
+  align-items: center;
+  background: rgb(235, 238, 240);
+}
+.form{
+  padding: 30px 40px;
+  border-radius: 25px;
+  background: rgb(248, 248, 248);
+  box-shadow: 3px 4px 8px 4px var(--box-shadow);
+}
+
+.Box input{
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: unset;
+  box-shadow: 1px 1px 1px var(--box-shadow);
+}
+.Box label{
+  margin-left: 20px;
+}
+
+.Valid{
+  font-size: 11pt;
+  color: rgb(99, 132, 224);
+  visibility:hidden;
+}
+#submit{
+  color: rgb(248, 248, 248);
+  padding: 10px 25px;
+  background: rgb(75, 75, 219);
+  cursor: pointer;
+  width: fit-content;
+  margin: auto;
+}

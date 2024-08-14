@@ -1,0 +1,22 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  
+}
+
+.form{
+  margin: auto;
+  width: fit-content;
+}
+.Box{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: left;
+}

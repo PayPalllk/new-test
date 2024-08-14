@@ -1,0 +1,29 @@
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header{
+  flex-shrink: 0;
+}
+
+/* .reg{
+  display: grid;
+  transition: grid-rows;
+} */
+
+.contentLay{
+  flex-grow: 1;
+}
+.cont{
+  flex-grow: 1;
+  min-height: 80vh;
+  
+}
+/* .form{
+  flex-grow: 1;
+} */
+
+footer .layout{
+  flex-shrink: 0;
+}

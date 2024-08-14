@@ -1,0 +1,28 @@
+.Box input{
+  border: unset;
+  background-color: unset;
+  
+}
+.Box .id{
+  text-align: right;
+}
+.Box .row{
+  gap: 0.5rem;
+}
+.Box .put{
+  background: var(--color1);
+  color: var(--color2);
+}
+.Box .put:hover{
+  color: white;
+  background-color: rgb(52 112 207);
+}
+.Box .delite{
+  color: red;
+  background-color: rgba(199, 199, 199, 0.479);
+ 
+}
+.Box .delite:hover{
+  color: white;
+  background: red;
+}

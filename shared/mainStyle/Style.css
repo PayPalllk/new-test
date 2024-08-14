@@ -1,0 +1,322 @@
+*{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16pt;
+}
+:root{
+  --black: #000;
+  --gray: rgba(163, 163, 163, 0.692);
+  /* --color1: rgb(226, 215, 65); */
+  /* --color2: rgb(11, 6, 32); */
+  --color3: rgb(244, 244, 255);
+  --color4: rgb(240, 228, 170);
+  /* --color5: rgb(116, 63, 63); */
+  /* --BCImage: linear-gradient() */
+  --color-text: white;
+  --BCFooter: rgb(141, 128, 128);
+  --box-shadow: rgb(163, 163, 163);
+  --color2: #252a49;
+  --color1: #939ed0;
+  --color4: #4a5ba6;
+  --color5: #252a49;
+}
+/* Ссылки */
+a{
+  text-decoration: none;
+  color: black;
+}
+
+h2 .load{
+  font-weight: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: (-50%, -50%);
+  margin: auto;
+}
+
+
+header{
+  color: var(--color1);
+  padding: 10px 30px;
+  background: var(--color2);
+}
+.katalog{
+  color: var(--color2);
+  background: var(--color1);
+  padding: 0.5rem 1rem;
+  border: 1px;
+  border-radius: 10px;
+  /* radial-gradient(ellipse , rgb(91, 126, 94), rgb(204, 223, 124) 100%); */
+}
+.katalog:hover{
+  background: var(--color1);
+}
+
+/* .blockSearch{
+  border-radius: ;
+} */
+.search{
+  position: relative;
+  z-index: 1;
+  color: white;
+  background: var(--color4);
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 100%;
+  border: unset;
+}
+.search::placeholder{
+  color: white;
+}
+.search:focus-visible{
+  color: #000;
+  background: var(--color-text);
+  border: none;
+  border-radius: 5px 5px 0 0;
+  outline: none;
+  /* .find{
+    transform-style: opacity(1);
+  } */
+}
+.find{
+  /* opacity: 0; */
+  z-index: 0;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 2px 8px 1px rgb(131, 131, 131);
+  border-radius: 0 0 5px 5px;
+  padding: 5px 1px 5px 1px;
+  li{
+    text-decoration: none;
+    color: #000;
+    list-style: none;
+    text-align: left;
+    padding-left: 0.5rem;
+  }
+}
+.find li:hover{
+  background: var(--color4);
+}
+
+header a{
+  color: var(--color1);
+}
+header menu>a:hover{
+  color: var(--color-text);
+  .logo{
+    /* border: 2px solid var(--color3); */
+    background-color: rgba(255, 255, 255, 0.255);
+  }
+}
+header button{
+  border: none;
+  background: none;
+  color: var(--color1);
+  cursor: pointer;
+}
+header .kol{
+  position: absolute;
+  display: none;
+  top: -.8rem;
+  right: -1.3rem;
+  color: white;
+  background: red;
+  padding: 0 .3rem;
+  /* padding: 1px 7px; */
+  border-radius: 50%;
+}
+/* id */
+#vition{
+  padding: 0.4rem 0.7rem;
+  border-radius: 40px 40px 40px 40px;
+  background-color: var(--color1);
+  color: var(--color2);
+}
+header button:hover{
+  color: var(--color-text);
+}
+.logo{
+  margin-top: 10px;
+  /* margin-bottom: -46px; */
+  font-size: 26pt;
+  border-radius: 8px;
+  /* border: 2px solid var(--color1); */
+}
+.logo-text{
+  font-size: 24pt;
+}
+
+header:first-child{
+  text-align: center;
+}
+/* Контент */
+.entry{
+  background-color: rgba(0, 0, 0, 0.212);
+  backdrop-filter: blur(4px);
+}
+.entry input{
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 1px var(--box-shadow);
+}
+.entry form{
+  filter: blur(0px);
+  background-color: #fff;
+  button{
+    color: white;
+    background-color: rgb(75, 75, 219);
+  }
+  a{
+    color: rgb(75, 75, 219);
+  }
+}
+#left{
+  cursor: pointer;
+  color: var(--color5);
+}
+
+.exit{
+  /* background-color: var(--color3); */
+  background-color: var(--color1);
+  >*{
+  color: var(--black);
+  }
+  form>*{
+    cursor: pointer;
+  }
+  h2{
+    color: var(--color5);
+  }
+  form input{
+    color: var(--color1);
+  }
+ /*  box-shadow: 1px 1px 1px 1px var(--color2); */
+}
+.exit form input{
+  background-color: var(--color5);
+}
+
+.top{
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 0 gray;
+}
+
+.content{
+  padding-bottom: 2.5rem;
+}
+
+/* Фильтр */
+/* .filter-line{
+  padding-right: 2rem;
+  border-right: 1px solid var(--black);
+} */
+.sticky{
+  padding: 16px 28px;
+}
+#filterReset{
+  background: var(--color1);
+  width: 100%;
+  padding: 5px 0;
+}
+#filter>*{
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  padding: 5px 0;
+}
+#filter div:last-child{
+  border: none;
+}
+.main{
+  /* background: var(--gray); */
+  /* border-radius: 10px; */
+  /* padding-left: 2.4rem;
+  border-left: 1px solid var(--black); */
+  padding: 15px 30px;
+  
+}
+.case{
+  margin-bottom: 2rem;
+}
+h3{
+  border-bottom: 2px solid var(--color2);
+  padding-bottom: 0.5rem;
+  padding-left: 0.2rem;
+  font-size: 18pt;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
+}
+.Box{
+  cursor: pointer;
+  background: rgb(231 231 231 / 64%);
+  border-radius: 10px;
+  /* box-shadow: 8px 5px 20px 1px #878; */
+  box-shadow: 0px 2px 4px 1px #878;
+  padding: 10px;
+  input{
+    background-color: unset;
+  }
+}
+.Box:hover{
+  margin: -0.3rem 0 +0.3rem 0; /* Почему то работает без последнего 0 для левого отступа */
+ /*  .img{
+    scale: 105%; 
+  }
+  .img .image{
+    scale: 110%;
+  } */
+  .text{
+    color: var(--color5);
+  }
+}
+.Box button:hover{
+background: var(--color1);
+color: var(--color2);
+}
+.main .img{
+  background: var(--gray);
+}
+.text{
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  max-width: 230px;
+  /* max-height: 2.4rem; */
+  overflow: hidden;
+  /* text-overflow: ellipsis;
+  white-space: nowrap; */
+}
+.text>div{
+  position: absolute;
+  top: 0;
+  height: fit-content;
+  background: white;
+  visibility: hidden;
+}
+.text:hover{
+  overflow: visible;
+  
+}
+.text:hover>div{
+  visibility: visible;
+}
+.Box button{
+  color: var(--color-text);
+  border: none;
+  background: var(--color2);
+}
+.Box button:hover{
+  background: var(--color1);
+  color: var(--color2);
+}
+
+/* ПОДВАЛ */
+footer{
+  /* background: var(--BCFooter); */
+  background: var(--color1);
+  padding: 1.25rem 2.5rem;
+}
